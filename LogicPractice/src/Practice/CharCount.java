@@ -11,11 +11,9 @@ public class CharCount {
 
 		char[] alpha = s.toCharArray();
 
-		int l = alpha.length;
-
 		HashMap<Character, Integer> count = new HashMap<Character, Integer>();
 
-		for (int i = 0; i < l; i++) {
+		for (int i = 0; i < alpha.length; i++) {
 
 			if (count.containsKey(alpha[i])) {
 
