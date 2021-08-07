@@ -7,7 +7,7 @@ public class CharCount {
 
 	public static void main(String[] args) {
 
-		String s = "aabbbbcccc";
+		String s = "aabbb bcccc";
 
 		char[] alpha = s.toCharArray();
 
@@ -20,7 +20,8 @@ public class CharCount {
 				count.put(alpha[i], count.get(alpha[i]) + 1);
 
 			} else {
-
+				
+				if(alpha[i] != ' ')
 				count.put(alpha[i], 1);
 
 			}
