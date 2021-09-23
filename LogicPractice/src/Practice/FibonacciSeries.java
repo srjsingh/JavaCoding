@@ -9,18 +9,20 @@ public class FibonacciSeries {
 
 		int a = first;
 		int b = second;
-		int temp = 0;
+		int temp = a+b;
 		int limit = 10;
 		
 		System.out.print(a + ", " + b);
 		
-		for(int i =1; i <= limit-2; i++) {
+		while(temp<100) {
 			
-			temp = a+b;
+			
 			a = b;
 			b = temp;
 			
 			System.out.print(", " + temp);
+			
+			temp = a+b;
 			
 		}
 		
